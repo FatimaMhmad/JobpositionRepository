@@ -36,6 +36,7 @@ class CityController extends Controller
 
     public function index()
     {
+        //index
         $cities = QueryBuilder::for(City::class)
         ->allowedFilters([
             'name',
